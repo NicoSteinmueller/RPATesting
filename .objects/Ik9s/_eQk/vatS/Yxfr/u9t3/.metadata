@@ -1,0 +1,13 @@
+﻿{
+  "Id": "u9t3XbrVl0yaROJ5ykMVlw",
+  "Reference": "nT3iJ3vn_kqe3kLHdMpYpw/u9t3XbrVl0yaROJ5ykMVlw",
+  "ParentRef": "nT3iJ3vn_kqe3kLHdMpYpw/YxfrfeBGQ0q23YWkw_fCng",
+  "Name": "Ausloggen",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Created": "2023-06-10T21:35:59.9658243Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-06-10T21:35:59.9658243Z"
+}

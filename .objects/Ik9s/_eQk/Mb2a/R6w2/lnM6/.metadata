@@ -1,0 +1,13 @@
+﻿{
+  "Id": "lnM6quJvikCOZEyJQ45xDA",
+  "Reference": "nT3iJ3vn_kqe3kLHdMpYpw/lnM6quJvikCOZEyJQ45xDA",
+  "ParentRef": "nT3iJ3vn_kqe3kLHdMpYpw/R6w2PmEMEk27bW2BmzTExw",
+  "Name": "Verzug in anderes Land",
+  "Type": "Element",
+  "TaxonomyType": "Toggle",
+  "Created": "2023-06-10T21:36:01.4968704Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-06-10T21:36:01.4968704Z"
+}

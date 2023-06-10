@@ -1,0 +1,13 @@
+﻿{
+  "Id": "QK0LsF3mn0WJbs_BpT45Dw",
+  "Reference": "nT3iJ3vn_kqe3kLHdMpYpw/QK0LsF3mn0WJbs_BpT45Dw",
+  "ParentRef": "nT3iJ3vn_kqe3kLHdMpYpw/R6w2PmEMEk27bW2BmzTExw",
+  "Name": "Land",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Created": "2023-06-10T21:36:01.5362371Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-06-10T21:36:01.5362371Z"
+}

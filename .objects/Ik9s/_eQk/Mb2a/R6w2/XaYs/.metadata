@@ -1,0 +1,13 @@
+﻿{
+  "Id": "XaYsimx-ik2ngFhsIV8QhA",
+  "Reference": "nT3iJ3vn_kqe3kLHdMpYpw/XaYsimx-ik2ngFhsIV8QhA",
+  "ParentRef": "nT3iJ3vn_kqe3kLHdMpYpw/R6w2PmEMEk27bW2BmzTExw",
+  "Name": "Hausnummer",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Created": "2023-06-10T21:36:01.41742Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-06-10T21:36:01.41742Z"
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Id": "92pzLOmEFUudRQT25Rnz5Q",
+  "Reference": "nT3iJ3vn_kqe3kLHdMpYpw/92pzLOmEFUudRQT25Rnz5Q",
+  "ParentRef": "nT3iJ3vn_kqe3kLHdMpYpw/tZ1z9mY-akaXvCGLIPBHNQ",
+  "Name": "Zurück",
+  "Type": "Element",
+  "TaxonomyType": "None",
+  "Created": "2023-06-10T21:36:01.2250142Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-06-10T21:36:01.2250142Z"
+}

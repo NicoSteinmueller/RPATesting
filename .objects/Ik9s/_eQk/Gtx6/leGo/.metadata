@@ -1,0 +1,13 @@
+﻿{
+  "Id": "leGoxrUdgEGzmkSOEdF53A",
+  "Reference": "nT3iJ3vn_kqe3kLHdMpYpw/leGoxrUdgEGzmkSOEdF53A",
+  "ParentRef": "nT3iJ3vn_kqe3kLHdMpYpw/Gtx6pKTScke3tPnf65iI8Q",
+  "Name": "Postabrechnungsnummer h…",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Created": "2023-06-10T21:36:00.3882382Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-06-10T21:36:00.3882382Z"
+}

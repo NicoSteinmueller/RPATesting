@@ -1,0 +1,13 @@
+﻿{
+  "Id": "Bxgah4UrV0atEa9XKWgibQ",
+  "Reference": "nT3iJ3vn_kqe3kLHdMpYpw/Bxgah4UrV0atEa9XKWgibQ",
+  "ParentRef": "nT3iJ3vn_kqe3kLHdMpYpw/A-yYm-4xSkmGxltNK1pjFA",
+  "Name": "Geburtsdatum",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Created": "2023-06-10T21:36:00.721243Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-06-10T21:36:00.721243Z"
+}

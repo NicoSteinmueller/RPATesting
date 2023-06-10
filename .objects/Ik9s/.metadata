@@ -1,0 +1,11 @@
+﻿{
+  "Id": "Ik9soW_vIEG2OdfsnfdZig",
+  "Reference": "nT3iJ3vn_kqe3kLHdMpYpw/Ik9soW_vIEG2OdfsnfdZig",
+  "Name": "DemoAppForRPATesting",
+  "Type": "App",
+  "Created": "2023-06-10T21:35:59.6347887Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-06-10T21:35:59.6347887Z"
+}

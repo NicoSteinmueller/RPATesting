@@ -1,0 +1,13 @@
+﻿{
+  "Id": "A-yYm-4xSkmGxltNK1pjFA",
+  "Reference": "nT3iJ3vn_kqe3kLHdMpYpw/A-yYm-4xSkmGxltNK1pjFA",
+  "ParentRef": "nT3iJ3vn_kqe3kLHdMpYpw/tZ1z9mY-akaXvCGLIPBHNQ",
+  "Name": "Berechtigter",
+  "Type": "Element",
+  "TaxonomyType": "Card",
+  "Created": "2023-06-10T21:36:00.5873103Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-06-10T21:36:00.5873103Z"
+}

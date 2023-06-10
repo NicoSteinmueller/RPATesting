@@ -1,0 +1,13 @@
+﻿{
+  "Id": "xYlC4UzIN0KnfiSlJ12f8w",
+  "Reference": "nT3iJ3vn_kqe3kLHdMpYpw/xYlC4UzIN0KnfiSlJ12f8w",
+  "ParentRef": "nT3iJ3vn_kqe3kLHdMpYpw/jRWVlMpmNEarDP6NkhCzGQ",
+  "Name": "Postleitzahl",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Created": "2023-06-10T21:36:00.8338478Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-06-10T21:36:00.8338478Z"
+}

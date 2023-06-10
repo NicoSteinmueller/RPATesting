@@ -1,0 +1,13 @@
+﻿{
+  "Id": "qZl0v1RhT0u4u8lOfVTeWw",
+  "Reference": "nT3iJ3vn_kqe3kLHdMpYpw/qZl0v1RhT0u4u8lOfVTeWw",
+  "ParentRef": "nT3iJ3vn_kqe3kLHdMpYpw/vatS4tjavkWG0AsC4bXzFQ",
+  "Name": "Auskunft",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Created": "2023-06-10T21:36:00.0020615Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-06-10T21:36:00.0020615Z"
+}

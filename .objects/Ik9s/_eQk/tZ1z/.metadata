@@ -1,0 +1,12 @@
+﻿{
+  "Id": "tZ1z9mY-akaXvCGLIPBHNQ",
+  "Reference": "nT3iJ3vn_kqe3kLHdMpYpw/tZ1z9mY-akaXvCGLIPBHNQ",
+  "ParentRef": "nT3iJ3vn_kqe3kLHdMpYpw/_eQk3AMhXEuxSn1XzTjKEw",
+  "Name": "Bestandsfall",
+  "Type": "Screen",
+  "Created": "2023-06-10T21:36:00.534259Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-06-10T21:36:00.534259Z"
+}

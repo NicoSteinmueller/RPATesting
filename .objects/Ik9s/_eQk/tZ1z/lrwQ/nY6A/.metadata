@@ -1,0 +1,13 @@
+﻿{
+  "Id": "nY6AQbAst0SQoluwgHMglA",
+  "Reference": "nT3iJ3vn_kqe3kLHdMpYpw/nY6AQbAst0SQoluwgHMglA",
+  "ParentRef": "nT3iJ3vn_kqe3kLHdMpYpw/lrwQbxCZDUWdHQmKMKbANw",
+  "Name": "Rentenausweis",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Created": "2023-06-10T21:36:01.0362932Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-06-10T21:36:01.0362932Z"
+}

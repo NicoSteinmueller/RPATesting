@@ -1,0 +1,13 @@
+﻿{
+  "Id": "gcPxfU_850SkrBY4OHG7BA",
+  "Reference": "nT3iJ3vn_kqe3kLHdMpYpw/gcPxfU_850SkrBY4OHG7BA",
+  "ParentRef": "nT3iJ3vn_kqe3kLHdMpYpw/Gtx6pKTScke3tPnf65iI8Q",
+  "Name": "Postrentennummer hier",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Created": "2023-06-10T21:36:00.4158779Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-06-10T21:36:00.4158779Z"
+}

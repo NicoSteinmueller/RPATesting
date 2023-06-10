@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="04u-FZ0mxkay4F0Yf5CTbQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="http://localhost:32768/Bestandsfall/c0f54c7d-1093-4488-805e-418f16a905a8" CvTextArgument="Dr." CvType="Text" DesignTimeRectangle="1032, 639, 856, 49" DesignTimeScaleFactor="1.5" ElementType="Text" FriendlyName="'Dr.'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='mud-table-cell' tag='TD' aaname='Dr.' /&gt;" Guid="97432755-7585-4b30-bc75-9202f7892127" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAA1wAAAA1CAYAAABV9urLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAKwSURBVHhe7d2xSxtRHMDx/leurpncOrRDVKgIbSlY1A7SoZtQoTpI0cHBwSCRGmhAQw0e0r/r11yiQVPTKT9yVz7DJzneu3f7l8e9e9FsrgUAAACzs7T0MhYWFkNwAQAAzNg4uDY2PgUAAACzMw6u8gcAAIDZEVwAAABJBBcAAEASwQUAAJBEcAEAACQRXAAAAEkEFwAAQBLBBQAAkERwAQAAJBFcAAAASQQXAABAEsEFAACQRHABAAAkEVwAAABJBBcAAEASwQUAAJBkTsF1EO2733E36baIXucs9rdXo/HsOgAAgPqYc3AV0T2/jPa9zlUxjq9eay+Wn10LAABQD3MOrsv4OjHXWN+N06v76DrZsdMFAADUVuWCa2hlMN8v56/j6N0z8wAAADVQzeAaeH98Pd7lGo9vnkavXHdxGFvff0bvtnzGTZx8fLoWAACgCiobXAufz6Jf3tM5jtcPYw/B1S9Gc7eD/1/XcbT5aB0AAEBFVDe4HuKqdxpbk2N3RbS/ffB+FwAAUGn1DK4fh2ILAACovHoG18XB3/cDAABUTD3f4RJcAABADVQ2uLZObgbz004pFFwAAED1VTO4Vg6jMzzyfeI7XIILAACokcoFV2N9L1q9cm60u/XkcIx/BFfj1dtYf7PqMA0AAKAy5hxcRXTPL6N9r9srhqE1jK3WXixPrpsaXLvR6o+e1/ryeBwAAGB+5hxcE26L6HXOYn97yk7V1ODaiaNuud5HkAEAgOqYU3ABAAD8/wQXAABAEsEFAACQRHABAAAkEVwAAABJBBcAAEASwQUAAJBEcAEAACQRXAAAAEkEFwAAQBLBBQAAkERwAQAAJBFcAAAASQQXAABAEsEFAACQRHABAAAkEVwAAABJxsFVXgAAADBbw+BqNtcCAACA2RkF12L8AdsFF8IJhZrzAAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DemoAppForRPATesting' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CvTextArgument="Titel" CvType="Text" DesignTimeRectangle="951, 652, 45, 19" ElementType="Text" FriendlyName="'Titel'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c0bae90bc20e047523cb850229b10641.png" xmlns="">0DaOJt8_rYUqPujTjzDkVUQ</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

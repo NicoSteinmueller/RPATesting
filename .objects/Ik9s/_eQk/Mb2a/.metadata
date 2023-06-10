@@ -1,0 +1,12 @@
+﻿{
+  "Id": "Mb2aYocEKUKCWXBl78210g",
+  "Reference": "nT3iJ3vn_kqe3kLHdMpYpw/Mb2aYocEKUKCWXBl78210g",
+  "ParentRef": "nT3iJ3vn_kqe3kLHdMpYpw/_eQk3AMhXEuxSn1XzTjKEw",
+  "Name": "Adressänderung",
+  "Type": "Screen",
+  "Created": "2023-06-10T21:36:01.2540916Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-06-10T21:36:01.2540916Z"
+}
