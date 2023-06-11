@@ -2,12 +2,15 @@
   "Id": "YxfrfeBGQ0q23YWkw_fCng",
   "Reference": "nT3iJ3vn_kqe3kLHdMpYpw/YxfrfeBGQ0q23YWkw_fCng",
   "ParentRef": "nT3iJ3vn_kqe3kLHdMpYpw/vatS4tjavkWG0AsC4bXzFQ",
-  "Name": "Account Optinos",
+  "Name": "Account Options",
   "Type": "Element",
   "TaxonomyType": "Dropdown",
   "Created": "2023-06-10T21:35:59.8864869Z",
   "CreatedBy": [
     "UiPath.Platform, Version=23.4.1.0, Culture=neutral, PublicKeyToken=null"
   ],
-  "Updated": "2023-06-10T21:35:59.8864869Z"
+  "Updated": "2023-06-11T07:43:13.1535019Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
 }
