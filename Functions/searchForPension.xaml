@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1679.3333333333333,2150</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1668,2150</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>searchForPension_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -110,7 +110,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Bestandsauskunft - Suche" sap:VirtualizedContainerService.HintSize="1616,1974.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="Never" ScopeGuid="5619e148-9328-4dbf-bd49-cbcdd7ed6288" Version="V2">
+    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="IfOpenedByAppBrowser" DisplayName="Bestandsauskunft - Suche" sap:VirtualizedContainerService.HintSize="1616,1974.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="IfNotOpen" ScopeGuid="5619e148-9328-4dbf-bd49-cbcdd7ed6288" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -200,15 +200,9 @@
                         </sap:WorkflowViewStateService.ViewState>
                         <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Functions\throwBEAndMoveOrderFile.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Functions\throwBEAndMoveOrderFile.xaml">
                           <ui:InvokeWorkflowFile.Arguments>
-                            <InArgument x:TypeArguments="x:String" x:Key="in_Exception">
-                              <Literal x:TypeArguments="x:String">Pension cannot be opened.</Literal>
-                            </InArgument>
-                            <InArgument x:TypeArguments="ui:QueueItem" x:Key="in_Transaction">
-                              <VisualBasicValue x:TypeArguments="ui:QueueItem" ExpressionText="in_Transaction" />
-                            </InArgument>
-                            <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">
-                              <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="in_Config" />
-                            </InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_Exception">Pension cannot be opened.</InArgument>
+                            <InArgument x:TypeArguments="ui:QueueItem" x:Key="in_Transaction">[in_Transaction]</InArgument>
+                            <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
                           </ui:InvokeWorkflowFile.Arguments>
                         </ui:InvokeWorkflowFile>
                       </Sequence>

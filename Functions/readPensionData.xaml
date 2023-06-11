@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1679.3333333333333,4884</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>598,4894.666666666667</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>readPensionData_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -103,47 +103,31 @@
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="readPensionData" sap:VirtualizedContainerService.HintSize="608,4819.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="readPensionData" sap:VirtualizedContainerService.HintSize="608,4830" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="berechtigter">
-        <Variable.Default>
-          <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:String)" ExpressionText="new Dictionary(of String,String)" />
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="anschrift">
-        <Variable.Default>
-          <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:String)" ExpressionText="new Dictionary(of String,String)" />
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="rente">
-        <Variable.Default>
-          <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:String)" ExpressionText="new Dictionary(of String,String)" />
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="konto">
-        <Variable.Default>
-          <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:String)" ExpressionText="new Dictionary(of String,String)" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Default="[new Dictionary(of String,String)]" Name="berechtigter" />
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Default="[new Dictionary(of String,String)]" Name="anschrift" />
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Default="[new Dictionary(of String,String)]" Name="rente" />
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Default="[new Dictionary(of String,String)]" Name="konto" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Bestandsfall" sap:VirtualizedContainerService.HintSize="546,4708.666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="9e08e5d5-119b-4aaa-ba64-1053caecf5c4" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Bestandsfall" sap:VirtualizedContainerService.HintSize="546,4719.333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="IfNotOpen" ScopeGuid="9e08e5d5-119b-4aaa-ba64-1053caecf5c4" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,4489.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,4500" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="read Berechtigter" sap:VirtualizedContainerService.HintSize="450,1067.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence DisplayName="read Berechtigter" sap:VirtualizedContainerService.HintSize="450,1072.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_6">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
