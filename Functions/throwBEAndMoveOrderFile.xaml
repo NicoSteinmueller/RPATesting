@@ -82,12 +82,13 @@
       <AssemblyReference>UiPath.Platform</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="throwBEAndMoveOrderFile" sap:VirtualizedContainerService.HintSize="450,407.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="throwBEAndMoveOrderFile" sap:VirtualizedContainerService.HintSize="450,592" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Warn]" Message="[&quot;Move Transaction file, because BE: &quot;+in_Exception]" />
     <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[in_Config(&quot;out_FolderBE&quot;).ToString+&quot;/&quot;+in_Transaction.SpecificContent(&quot;fileName&quot;).ToString]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="388,164.66666666666666" sap2010:WorkflowViewState.IdRef="MoveFile_2" Path="[in_Config(&quot;in_Folder&quot;).ToString+&quot;/&quot;+in_Transaction.SpecificContent(&quot;fileName&quot;).ToString]" />
     <Throw Exception="[new BusinessRuleException(in_Exception)]" sap:VirtualizedContainerService.HintSize="388,92" sap2010:WorkflowViewState.IdRef="Throw_1" />
   </Sequence>
