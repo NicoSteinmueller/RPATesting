@@ -3,6 +3,18 @@
     {
       "mockFilePath": "Mocks\\Functions\\checkIfTransactionMayBeProcessed_mock.xaml",
       "sourceWorkflowPath": "Functions\\checkIfTransactionMayBeProcessed.xaml"
+    },
+    {
+      "mockFilePath": "Mocks\\Functions\\searchForPension_mock.xaml",
+      "sourceWorkflowPath": "Functions\\searchForPension.xaml"
+    },
+    {
+      "mockFilePath": "Mocks\\Functions\\searchForPension_mock_1.xaml",
+      "sourceWorkflowPath": "Functions\\searchForPension.xaml"
+    },
+    {
+      "mockFilePath": "Mocks\\Functions\\searchForPension_mock_2.xaml",
+      "sourceWorkflowPath": "Functions\\searchForPension.xaml"
     }
   ]
 }

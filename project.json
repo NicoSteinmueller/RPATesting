@@ -56,6 +56,34 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Tests\\checkIfTransactionMayBeProcessed\\checkTransaction_variousInput_variousOutput.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "25c2cee5-f0f0-4960-b4e7-78a574fc37fe",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\searchForPension\\searchPension_CorrectPanrPrnr_CorrectLink.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "258b6a98-678c-4062-8a32-c1cfccd0a9fc",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\searchForPension\\searchPension_PanrPrnr_TypeIntoCorrect.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "03e0a983-8311-4fbc-8b90-66a23aaa79d3",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\searchForPension\\searchPension_PensionNotExists_BE.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "7e702b64-35c9-408a-a3b9-2f39733aefdc",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\searchForPension\\searchPension_PensionNotLoad_BE.xaml"
       }
     ],
     "modernBehavior": true
