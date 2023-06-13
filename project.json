@@ -43,46 +43,11 @@
     },
     "fileInfoCollection": [
       {
-        "editingStatus": "InProgress",
-        "testCaseId": "05bfcf4e-9c71-440f-bb95-a987688d13e8",
+        "editingStatus": "Publishable",
+        "testCaseId": "b621c127-293e-4588-a8ed-2383c6892eb7",
         "testCaseType": "TestCase",
-        "executionTemplateType": "Local",
-        "fileName": "Tests\\GetTransactionDataTestCase.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "7e4a66d9-ae11-4389-bfa0-ba89b6241060",
-        "testCaseType": "TestCase",
-        "executionTemplateType": "Local",
-        "fileName": "Tests\\InitAllApplicationsTestCase.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "bcd7328e-b644-41ad-a0fd-09656e9ca2a6",
-        "testCaseType": "TestCase",
-        "executionTemplateType": "Local",
-        "fileName": "Tests\\InitAllSettingsTestCase.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "f9235810-59a3-4532-b73a-2443a5dcb21c",
-        "testCaseType": "TestCase",
-        "executionTemplateType": "Local",
-        "fileName": "Tests\\MainTestCase.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "b9f56a7f-1728-43b8-9b79-68d777d1d36d",
-        "testCaseType": "TestCase",
-        "executionTemplateType": "Local",
-        "fileName": "Tests\\ProcessTestCase.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "b92defc0-3b87-4841-b3a4-9cfbe3c23c4f",
-        "testCaseType": "TestCase",
-        "executionTemplateType": "Local",
-        "fileName": "Tests\\WorkflowTestCaseTemplate.xaml"
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\throwBEAndMoveOrderFile\\throwBE_InputComplete_Success.xaml"
       }
     ],
     "modernBehavior": true
