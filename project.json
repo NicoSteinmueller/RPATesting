@@ -84,6 +84,13 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Tests\\searchForPension\\searchPension_PensionNotLoad_BE.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "e51386ef-aea4-448d-a714-a9fdec368bf3",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\readPensionData\\readPension_CompletePension_AllDataCorrect.xaml"
       }
     ],
     "modernBehavior": true
