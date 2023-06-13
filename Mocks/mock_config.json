@@ -15,6 +15,18 @@
     {
       "mockFilePath": "Mocks\\Functions\\searchForPension_mock_2.xaml",
       "sourceWorkflowPath": "Functions\\searchForPension.xaml"
+    },
+    {
+      "mockFilePath": "Mocks\\Functions\\enterChange_mock.xaml",
+      "sourceWorkflowPath": "Functions\\enterChange.xaml"
+    },
+    {
+      "mockFilePath": "Mocks\\Functions\\enterChange_mock_1.xaml",
+      "sourceWorkflowPath": "Functions\\enterChange.xaml"
+    },
+    {
+      "mockFilePath": "Mocks\\Functions\\enterChange_mock_2.xaml",
+      "sourceWorkflowPath": "Functions\\enterChange.xaml"
     }
   ]
 }

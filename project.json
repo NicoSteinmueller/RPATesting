@@ -91,6 +91,27 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Tests\\readPensionData\\readPension_CompletePension_AllDataCorrect.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "7998bb25-bd47-4af4-9e64-04964e868b05",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\enterChange\\enterChange_InputData_AllDataInputed.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "fcda800f-588c-43bc-aefd-cf3293b06bbc",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\enterChange\\enterChange_InputAndProcessData_InputSuccessAndMoveFile.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "c0838552-d721-42cd-8a58-c8646715c835",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\enterChange\\enterChange_InputFail_BE.xaml"
       }
     ],
     "modernBehavior": true

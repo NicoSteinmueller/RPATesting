@@ -1,0 +1,13 @@
+﻿{
+  "Id": "84Ff5lq0r0uKM9Kk4GOeNA",
+  "Reference": "nT3iJ3vn_kqe3kLHdMpYpw/84Ff5lq0r0uKM9Kk4GOeNA",
+  "ParentRef": "nT3iJ3vn_kqe3kLHdMpYpw/bX340xdc502PJs5jGWtilA",
+  "Name": "Straße",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Created": "2023-06-13T18:35:31.3269982Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-06-13T18:35:31.3269982Z"
+}

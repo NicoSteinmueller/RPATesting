@@ -1,15 +1,15 @@
 ﻿{
-  "Id": "R6w2PmEMEk27bW2BmzTExw",
-  "Reference": "nT3iJ3vn_kqe3kLHdMpYpw/R6w2PmEMEk27bW2BmzTExw",
+  "Id": "bX340xdc502PJs5jGWtilA",
+  "Reference": "nT3iJ3vn_kqe3kLHdMpYpw/bX340xdc502PJs5jGWtilA",
   "ParentRef": "nT3iJ3vn_kqe3kLHdMpYpw/Mb2aYocEKUKCWXBl78210g",
-  "Name": "Formular - Input",
+  "Name": "Formular - Read",
   "Type": "Element",
   "TaxonomyType": "Card",
-  "Created": "2023-06-10T21:36:01.3055815Z",
+  "Created": "2023-06-13T18:31:50.6947631Z",
   "CreatedBy": [
     "UiPath.Platform, Version=23.4.1.0, Culture=neutral, PublicKeyToken=null"
   ],
-  "Updated": "2023-06-13T18:31:17.8412295Z",
+  "Updated": "2023-06-13T18:35:31.2102506Z",
   "UpdatedBy": [
     "UiPath.Platform, Version=23.4.1.0, Culture=neutral, PublicKeyToken=null"
   ]

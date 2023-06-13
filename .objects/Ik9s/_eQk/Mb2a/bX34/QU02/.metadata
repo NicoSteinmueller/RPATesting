@@ -1,0 +1,13 @@
+﻿{
+  "Id": "QU02rmfDCE6fMw89cJEzMA",
+  "Reference": "nT3iJ3vn_kqe3kLHdMpYpw/QU02rmfDCE6fMw89cJEzMA",
+  "ParentRef": "nT3iJ3vn_kqe3kLHdMpYpw/bX340xdc502PJs5jGWtilA",
+  "Name": "PANR",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Created": "2023-06-13T18:35:31.2744109Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-06-13T18:35:31.2744109Z"
+}
