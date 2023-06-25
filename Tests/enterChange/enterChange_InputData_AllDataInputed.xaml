@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="enterChange_InputData_AllDataInputed" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1757.3333333333333,1505.3333333333333" sap2010:WorkflowViewState.IdRef="enterChange_InputData_AllDataInputed_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="enterChange_InputData_AllDataInputed" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1028,3696.6666666666665" sap2010:WorkflowViewState.IdRef="enterChange_InputData_AllDataInputed_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -27,6 +27,17 @@
       <x:String>GlobalConstantsNamespace</x:String>
       <x:String>System.Runtime.Serialization</x:String>
       <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -70,9 +81,22 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="enterChange_InputData_AllDataInputed" sap:VirtualizedContainerService.HintSize="546.6666666666666,1440.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="enterChange_InputData_AllDataInputed" sap:VirtualizedContainerService.HintSize="754,3632" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="config" />
       <Variable x:TypeArguments="ui:QueueItem" Name="item" />
@@ -82,7 +106,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="484.6666666666667,798" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="692,798" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -181,13 +205,11 @@
       </ui:InvokeWorkflowFile>
       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Framework\InitAllApplications.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="422.6666666666667,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Framework\InitAllApplications.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">
-            <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="config" />
-          </InArgument>
+          <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[config]</InArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
     </Sequence>
-    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="484.6666666666667,226" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="692,226" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -195,22 +217,409 @@
       </sap:WorkflowViewStateService.ViewState>
       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Mocks\Functions\enterChange_mock.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Mocks\Functions\enterChange_mock.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <InArgument x:TypeArguments="ui:QueueItem" x:Key="in_Transaction">
-            <VisualBasicValue x:TypeArguments="ui:QueueItem" ExpressionText="item" />
-          </InArgument>
-          <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">
-            <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="config" />
-          </InArgument>
+          <InArgument x:TypeArguments="ui:QueueItem" x:Key="in_Transaction">[item]</InArgument>
+          <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[config]</InArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
     </Sequence>
-    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="484.6666666666667,226" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="692,2417.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Framework\KillAllProcesses.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Framework\KillAllProcesses.xaml">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Adressänderung" sap:VirtualizedContainerService.HintSize="630,2151.3333333333335" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="fea68d5f-d7ac-465f-a109-d323a6f879e9" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence sap:VirtualizedContainerService.HintSize="596,1932" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="534,269.3333333333333" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_1" Operator="Equality" OutputArgument="TextString" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                <uta:VerifyControlAttribute.ActivityToTest>
+                  <ActivityAction>
+                    <uix:NGetText DisplayName="Get Text 'PANR'" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="fea68d5f-d7ac-465f-a109-d323a6f879e9" Version="V3">
+                      <uix:NGetText.OutUiElement>
+                        <OutArgument x:TypeArguments="ui:UiElement">
+                          <VariableReference x:TypeArguments="ui:UiElement">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="ui:UiElement" Name="_autogenerated_OutUiElement" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NGetText.OutUiElement>
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="http://localhost:32768/Adress%C3%A4nderung" ContentHash="wYJ6tk_ppUayThzDKa8Hqw" CvElementArea="1268, 497, 645, 42" CvTextArea="1269, 505, 43, 21" CvTextArgument="055" CvType="InputBox" DesignTimeRectangle="1271, 492, 642, 48" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'PANR'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='mud-input-slot mud-input-root mud-input-root-text' aaname='' /&gt;" Guid="850a7bc4-b735-49ef-a3b2-4dded56fd2bc" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAoYAAAA0CAYAAAAXF/kuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAP9SURBVHhe7d1BaxtHGIDh/itffTU9OTm1oZDkUhNaCnWSpqlJcqhpTGxIdRDFhggiE5sgE4vWYAtb2Jj+rq+rWa26K62cpMjqwc/hOUi7I11fZndmvlhYWAwAABCGAAAkwhAAgEQYAgCQCEMAABJhCABAIgwBAEiEIQAAiTAEACARhgAAJMIQAIBEGAIAkAhDAAASYQgAQCIMAQBIhCEAAIkwBAAgEYYAACS1Ybi0shHbB2fRP/87Li9z/d5J7L9+Erdq7s9txH7p/lq9djweH7feqb+3pNdaq44BAGDmJsJw6ad2HJWD8PQi+v3S5/eNuDs2JteIzvCeqerCcOuw/t4SYQgAcP3GwvBhbB/lMdb/sBM/3i6+X46V9b3opVC7iP315dKYoUft/PrpXjwfv3aFx62z/P9212uvAwAwH9UwLOLu8q/4/ZvS98lyPN+9SBF3edCIpcq1zLO96A+u1c0KXqH4TbOCAAD/r0oYrvxxkodfdyfulL4fKd4HrJsVLB4JZ9FY+f4jNg+yMdm4zlb9dQAA5qMShsXs3dTHuqvFjOJhbI5dK6Ly8x4J/zB8dH0R7Wd11wEAmJdKGBazd9Mf6xYLTM6i9ah6bfSuYLcTnePhI+eB87M4etcsva9YthatXh6G3f3D6JUWuVx+dBU0AACzNLMwLMZO1T+MzXvVMZ+yknn6KmgAAGZpZmH4tJXve9h734zHXxerlr+K738rVjNnPjTH3l18Ea3B7OL5WXRer8WdL4ff334YL3fzGciBbuN+aQwAANdhZmF4lTujvQpPYvtB/T2T7v87C3n0JlZq7wEAYFbmEoYLC+vRPs1/u/Oq7voUxRY4NYtdAACYrUoYjvYp3N+o3DRyxarkqxWLTD5zW5rRvorCEADgulXC8D/vY7jRyY/Oez/+DmGhfsbw5btsTDau83rKO4RmDAEA5qYShuWTT5oTK4iX49cs5PIZxa3qyScP3sTRcNzkiSmZX4rAq75jOArRiUUpuadvh//nHUMAgGtXDcPyWcl/vomnU85Kbj8bPyv522h268YtxtLKRrSP82uDU1EqAXhvJ7rD3zzaeVHas7D8f4PHz1YlAwBct7EwzHzXjG5po+n0iLj0ufd2ffKc5IF7jeiMj8sUn+v3MVyMu1uHw9nEzHk+pvx/9jEEAJiPyTDMDGb5tg/yfQlHgfYpJ5HcfhKbrbETTPpn0Wk1ppx8kru12ojW+P8dH0brlZNPAADmpTYMAQC4eYQhAACJMAQAIBGGAAAkwhAAgEQYAgCQCEMAABJhCABAIgwBAEiEIQAAiTAEACARhgAAJMIQAIBEGAIAkAhDAACSURiurv4MAMANNBGGAADcZIvxD/M5aWuk5TJdAAAAAElFTkSuQmCC" InformativeScreenshot="a9a1ae82eaf796904e3ae188ceaa1f31.png" IsResponsive="True" Reference="nT3iJ3vn_kqe3kLHdMpYpw/QU02rmfDCE6fMw89cJEzMA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DemoAppForRPATesting' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArgument="PANR" CvType="Text" DesignTimeRectangle="1271, 470, 46, 18" ElementType="Text" FriendlyName="'PANR'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='mud-input-label mud-input-label-animated mud-input-label-text mud-input-label-inputcontrol' aaname='PANR' check:innerText='PANR' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADIAAAAWCAYAAACCAs+RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAJ8SURBVFhH7ZXPaxpBFMf7X+01V/EkPQURjJeUNqVQmoT8oM2hYkIiVAlLcakLsdQ9rOiCC1V0UUL+rm/eODu7M+NsWXOywcP38n7MvM+8mTdvLGsPr0E7kG3TDmTbpICcuHM8Pj6tK5oj/GPjc1FN5qqhNWRxE3SOTH7ScQ9Tts7fHk5MfqsNn/kH7dQmcnSJWt7K+UaQJXzHRuuHkAN3EAOyQnSY912E8SZT91L1CUlFTX+ZYrJBokE3Vy0GkDnc49TGVUq6FbRriu+jMyH7BAHryqyPc8mXSDldU+eyQUyHw/d8gt8sJbacIKSKg0DfzLpCb0a2oY1qw18t7tWlHCFR1HDEgQIHVSVmMxCTLz+IabOLPiKy8ZOpcyiviYKSR5I2Tjp7fyjFbAZSiA8t/PkpseUHiYuOftcT23ePNl/4uI7v6vnDkvLHaFWkPCa5qOIl3CnLo7gDEZMXZB/VM7oZkZ6fC6SE8qkNn20u+4pNeAuyeTdpbLy5/o70ogpf+aGsruQqJhuEvytNszE6p+n7YDKAGBKZFnN4jfQ6lNtjsi/Ru0jzLesLOiHFhl28S2yktdMtUTdZ92hC3jLobBB5atker89vagdFMoDo49fG9dkHlJWxK/6OLGmTaQ2EVLyBx65INMJdJefVErdguv4fbfDYJR3xv0Od8UJ97nu4SuNNRZHKtyP+7jx/fSJm5KSjV+3Ki0D4YllxNdgBFSX/KRlFWdYh7gbsilF8TpCkK9qf9QKQ+O8wtFeofM/eD/0pjfhBZoKQDmwErLC8ICTRFXmobAwiJo6xKCHxeYo/5V8gpGoMnhdE7sq3+O0qIP+zdiDbplcCsodnz6HSdv9ZPIMAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <uix:NGetText.TextString>
+                        <OutArgument x:TypeArguments="x:String">
+                          <VariableReference x:TypeArguments="x:String">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="x:String" x:Name="__ReferenceID0" Name="_autogenerated_TextString" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NGetText.TextString>
+                      <uix:NGetText.WordsInfo>
+                        <OutArgument x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                          <VariableReference x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" Name="_autogenerated_WordsInfo" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NGetText.WordsInfo>
+                    </uix:NGetText>
+                  </ActivityAction>
+                </uta:VerifyControlAttribute.ActivityToTest>
+                <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                  <ActivityFunc x:TypeArguments="x:Object">
+                    <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_1">
+                      <uta:ArgumentsBridge.Input>
+                        <InArgument x:TypeArguments="x:Object">
+                          <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID0}" />
+                        </InArgument>
+                      </uta:ArgumentsBridge.Input>
+                    </uta:ArgumentsBridge>
+                  </ActivityFunc>
+                </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <uta:VerifyControlAttribute.Expression>
+                  <InArgument x:TypeArguments="x:Object">[item.SpecificContent("panr")]</InArgument>
+                </uta:VerifyControlAttribute.Expression>
+              </uta:VerifyControlAttribute>
+              <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="534,269.3333333333333" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_2" Operator="Equality" OutputArgument="TextString" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                <uta:VerifyControlAttribute.ActivityToTest>
+                  <ActivityAction>
+                    <uix:NGetText DisplayName="Get Text 'PRNR'" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="fea68d5f-d7ac-465f-a109-d323a6f879e9" Version="V3">
+                      <uix:NGetText.OutUiElement>
+                        <OutArgument x:TypeArguments="ui:UiElement">
+                          <VariableReference x:TypeArguments="ui:UiElement">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="ui:UiElement" Name="_autogenerated_OutUiElement" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NGetText.OutUiElement>
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="http://localhost:32768/Adress%C3%A4nderung" ContentHash="DEoCf_0-AkWeL-nJdTTN9Q" CvElementArea="1946, 496, 649, 45" CvTextArea="1945, 505, 202, 21" CvTextArgument="71120658W71889" CvType="InputBox" DesignTimeRectangle="1949, 492, 642, 48" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'PRNR'" FullSelectorArgument="&lt;webctrl idx='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='text' tag='INPUT' class='mud-input-slot mud-input-root mud-input-root-text' aaname='' /&gt;" Guid="2f45fb30-2a78-4fe7-b931-def574c7b6d3" ImageBase64="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" InformativeScreenshot="5fb1bdff877e21918c34095e6332da63.png" IsResponsive="True" Reference="nT3iJ3vn_kqe3kLHdMpYpw/qoUd2nx5MEmkoU7MU2ujLg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DemoAppForRPATesting' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArgument="PRNR" CvType="Text" DesignTimeRectangle="1949, 470, 47, 18" ElementType="Text" FriendlyName="'PRNR'" FullSelectorArgument="&lt;webctrl aaname='PRNR' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='PRNR' tag='LABEL' type='' class='mud-input-label mud-input-label-animated mud-input-label-text mud-input-label-inputcontrol' check:innerText='PRNR' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADMAAAAWCAYAAABtwKSvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAJkSURBVFhH7ZbBattAEIb7Vr76anzytSGQ9JJC0xZKGtPWtD3EJKURxKaIYtEIqmDrIEEMEdgiFjamz/V3VtKudqXdIEMDbvDhx/bM7mq+mdmRnzUaTTwV7WC2VTuYbZUCc+ousF7/qSpZIBrbeNeWNw8R6NYuV4jDa5y97Ehrm7gMmX+F4PsLxc6VPXsB931hy/ZUlcxuMeq/RUvaz6SBoQc6NgZXXA7cMIeceTgVQDlMNJHW2hiN50iYPbnF5WFxtgiM2fcLO5cZZg5POn/gBIgSZqc4rSPlDA2MemCmjqjadMgzm8OEQ2ldptZ5kK6N3Z6wyVlO/G+VrJphCF5al6ptwV+SL6bkSvaaMKR9B1MleDOMzsezHIQr+lzB+6y24UYwBl99mEqAD8AcXyNiPqoAt4mHH9qYsqzeT/BFuoObwZxgFJFvGeBMsteH+TRJ70Jy089tOpgO9t5Y8GYsCDqnW2RfDuzg6o6+Z23I260uTOv5CS5u2Fp1P1MNGAqwayOI8wCFL4fRabmAf65eTjWwI9hT9rsANsPoFY8tHOTruDQw+s3VAHMYeZq5Rcblc5kqWeatyCYk/TbDyNPMy1q0dPG5NDDl0Wzj4sMr7CnvGCZdm/FepqBL41fXMq9/zslG8L96D8CU9jjZnsCqvq82GABl6QeAbiwz6QJrNHpw0/s1h+/XgzGNZaZ/DiOqs77DQKqOHobgux5idk6qGjAkXp3inZfpEWCK6iS/vwqbKTD5hVwXRlSHxvtHyf4oMHJ17PwvjRmG1O7Du2f+mjAkUZ0fxVBSYP537WC2VU8Ipom/n7UEaE2D5R8AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <uix:NGetText.TextString>
+                        <OutArgument x:TypeArguments="x:String">
+                          <VariableReference x:TypeArguments="x:String">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="x:String" x:Name="__ReferenceID1" Name="_autogenerated_TextString" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NGetText.TextString>
+                      <uix:NGetText.WordsInfo>
+                        <OutArgument x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                          <VariableReference x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" Name="_autogenerated_WordsInfo" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NGetText.WordsInfo>
+                    </uix:NGetText>
+                  </ActivityAction>
+                </uta:VerifyControlAttribute.ActivityToTest>
+                <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                  <ActivityFunc x:TypeArguments="x:Object">
+                    <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_2">
+                      <uta:ArgumentsBridge.Input>
+                        <InArgument x:TypeArguments="x:Object">
+                          <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID1}" />
+                        </InArgument>
+                      </uta:ArgumentsBridge.Input>
+                    </uta:ArgumentsBridge>
+                  </ActivityFunc>
+                </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <uta:VerifyControlAttribute.Expression>
+                  <InArgument x:TypeArguments="x:Object">[item.SpecificContent("prnr")]</InArgument>
+                </uta:VerifyControlAttribute.Expression>
+              </uta:VerifyControlAttribute>
+              <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="534,269.3333333333333" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_3" Operator="Equality" OutputArgument="TextString" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                <uta:VerifyControlAttribute.ActivityToTest>
+                  <ActivityAction>
+                    <uix:NGetText DisplayName="Get Text 'Straße'" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="fea68d5f-d7ac-465f-a109-d323a6f879e9" Version="V3">
+                      <uix:NGetText.OutUiElement>
+                        <OutArgument x:TypeArguments="ui:UiElement">
+                          <VariableReference x:TypeArguments="ui:UiElement">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="ui:UiElement" Name="_autogenerated_OutUiElement" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NGetText.OutUiElement>
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="http://localhost:32768/Adress%C3%A4nderung" ContentHash="ptN1rjcL5E63hkhP41S1AA" CvTextArgument="Engelmannweg" CvType="Text" DesignTimeRectangle="1271, 573, 1320, 48" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'Straße'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='text' tag='INPUT' class='mud-input-slot mud-input-root mud-input-root-text' aaname='' /&gt;" Guid="eb9f1bf1-0169-4d09-982b-d69f29237408" ImageBase64="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" InformativeScreenshot="6cbdea50cbeb1bbf90dd9cffd0c755bc.png" IsResponsive="True" Reference="nT3iJ3vn_kqe3kLHdMpYpw/84Ff5lq0r0uKM9Kk4GOeNA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DemoAppForRPATesting' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArgument="Strasse" CvType="Text" DesignTimeRectangle="1271, 551, 53, 18" ElementType="Text" FriendlyName="'Straße'" FullSelectorArgument="&lt;webctrl aaname='Straße' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Straße' tag='LABEL' type='' class='mud-input-label mud-input-label-animated mud-input-label-text mud-input-label-inputcontrol' check:innerText='Straße' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADkAAAAWCAYAAAB64jRmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAANUSURBVFhH7VbfaxpBEO5/5WtexackTyEENBQigWKozY+mIU2CEgMRVOQQDzzolShyokc8iEc8FOnf9XX2bu9u9zyt0obSNA8f6Ozczny7883su0RiA68dbyRfC95I/h1s4mNlAHvyA7MZYTKGqd0hHeu7GuZIJo8UdB7HcIIgU9i9FgrZTcnvpbBbHrhx7W4L1YqCZnfs/rcan2L9V4FEMnmqw2bEnBEMTXWDKBo/1ckIzWPhY56MURZsv40cmhbFem7ja2C7gGaTzWohK/muDoHkPqp92mw2hJKRnRIZFSYj31ew69tehGQNBovTqwk2TvzPkOQnZus4ERw80AF0p3DohEvH/LYlDHAf2aPaGHolH+y3Q1ozYLF1/p1t6ihIBxpDkseztQvBL8RWXoHxNF2yZ+xNTtG5PZCcJKT28f4wh2x96G5q1un34QG23HVOkgUkLVu9AYxvNbqBTZxonrZ8rVVVkgHzexIPNUqS5zQxUEr5PiF8eTmWgSbbs96G5ZC/Y6Ag+MuNJ0NBmBP78JE+vL1CeltYFxFbrj7JMbRTsVGVoT9TJXRqSAa2DXxQR+Q7hX7p26Ik48rXh1B5AqHkZRsOfWM1coFNJsmwfYbqwyjsrgRGuHoU6a7LSMaWfAzm9oiSykF5ZDlED43Ay1gk4+EOHZa7cDDzJAPsIP25Bq1LhFlgCtQp7ofr65JM5VBgJcorRcRikgS/uqi76zeCjHj8hViNZIhkVoEpNRHCWiQPuN7HMNQyzpmmBV0vJcmQuYP+5H0f3CiPb30nLTI9RnEdztWQ5HUbNunGbJwFiyLueyyI30UJ65DML+iQc3ss0aA/xmjN1bWvPfXXj4SQ5B4F8G8r2slSRWoctCYO6XVIxo6BsOOuRDLBc6BZ7TUv0h7vpCWpOdK+dJPngk0q1zQl7upPePFU1TZMljh1QaMsaOKLd5JOn2ZipYyTPWZfVK5XXoK0h/VAI6Suw7DC2RZLco/NvwG0Ois/Fbrp+YvPuyBfexj4aX12cFSRlSXddStPzaYnvF0JDgVrFnNS+2c6Kz14NzGb0ZMvz2xLGg/pSuOJMrhDuxi9YYFktgZdfEM7pGflis/jEOmblvQYiMt1pcbzr+ON5GvBf0ByAz8BsmH89dy91F0AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <uix:NGetText.TextString>
+                        <OutArgument x:TypeArguments="x:String">
+                          <VariableReference x:TypeArguments="x:String">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="x:String" x:Name="__ReferenceID2" Name="_autogenerated_TextString" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NGetText.TextString>
+                      <uix:NGetText.WordsInfo>
+                        <OutArgument x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                          <VariableReference x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" Name="_autogenerated_WordsInfo" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NGetText.WordsInfo>
+                    </uix:NGetText>
+                  </ActivityAction>
+                </uta:VerifyControlAttribute.ActivityToTest>
+                <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                  <ActivityFunc x:TypeArguments="x:Object">
+                    <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_3">
+                      <uta:ArgumentsBridge.Input>
+                        <InArgument x:TypeArguments="x:Object">
+                          <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID2}" />
+                        </InArgument>
+                      </uta:ArgumentsBridge.Input>
+                    </uta:ArgumentsBridge>
+                  </ActivityFunc>
+                </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <uta:VerifyControlAttribute.Expression>
+                  <InArgument x:TypeArguments="x:Object">[item.SpecificContent("newStreet")]</InArgument>
+                </uta:VerifyControlAttribute.Expression>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uta:VerifyControlAttribute>
+              <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="534,269.3333333333333" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_4" Operator="Equality" OutputArgument="TextString" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                <uta:VerifyControlAttribute.ActivityToTest>
+                  <ActivityAction>
+                    <uix:NGetText DisplayName="Get Text 'Hausnummer'" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="fea68d5f-d7ac-465f-a109-d323a6f879e9" Version="V3">
+                      <uix:NGetText.OutUiElement>
+                        <OutArgument x:TypeArguments="ui:UiElement">
+                          <VariableReference x:TypeArguments="ui:UiElement">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="ui:UiElement" Name="_autogenerated_OutUiElement" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NGetText.OutUiElement>
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="http://localhost:32768/Adress%C3%A4nderung" ContentHash="dbMg1kxQn0G54WHEW-ieWw" CvElementArea="1262, 657, 1330, 44" CvTextArea="1269, 667, 30, 21" CvTextArgument="30" CvType="InputBox" DesignTimeRectangle="1271, 654, 1320, 48" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'Hausnummer'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' idx='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='text' class='mud-input-slot mud-input-root mud-input-root-text' tag='INPUT' aaname='' /&gt;" Guid="c7ef8158-ed63-49a3-83b5-4f9739893834" ImageBase64="iVBORw0KGgoAAAANSUhEUgAABSwAAAA0CAYAAACAVna1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAQiSURBVHhe7d1BSyNnGMDxfiuvXsVT7Em8bL2YQ6mgrdit0BY2sOIGipQQXFphFRzEQoIKa9CQIP1cT9WZJDMxbl0QfA+/w+8y7/vMB/jzzrzfzM3NBwAAAABACgRLAAAAACAZgiUAAAAAkAzBEgAAAABIhmAJAAAAACRDsAQAAAAAkiFYAgAAAADJECwBAAAAgGQIlgAAAABAMgRLAAAAACAZgiUAAAAAkAzBEgAAAABIhmAJAAAAACRDsAQAAAAAkiFYAgAAAADJECwBAAAAgGQIlgAAAABAMgRLAAAAACAZM4Pl0mYrsvOb6A/+jdvbXP9zJw73tmNpxv6Rp+YOGuuxMGM/AAAAAEDZVLCsxVb7KvpFbLwdDKN/fadfCpCn+/GmMpN70+w8niuFy8u/dkRLAAAAAOCLqsHyl5MiOg6j2yqfpqxFvXESvWIta9QmM/cWdyMrombveDfqi6O15dhoXRTvvIqD70szAAAAAABTKsHyXZZHx9usOeM0ZC3eF+v940ZlbaHZyeeuT+Jt6XluLVrdfK53uDO1BgAAAAAwUQqWtfiQ5Z9yd9vblU0jW4c3eZj8Z7/yfBQ6p0PmSL19lc91P8bKjHUAAAAAgHszL92ZbS1a53mYvGyvl56vjk9Qdv9cLT0v2StOYPaOYmvWOgAAAADAnWcEy1qs/NCI1mlxuvLzUWyN/1F5bycOe3mwPGuWn5f8dFT8/7ITH2atAwAAAADceTJYjj//LumdtmLj2+m9giUAAAAA8DKeDJYb7YuH/1k+GBTRcnAT2e761IU8giUAAAAA8DKe+Q/L5dj4o1NEx2FkjVppTbAEAAAAAF7GV1y6Mx9vPw0fwmT1tm/BEgAAAAB4GV8VLOeaxW3f1yfx6/j55Jbw6u3hJW4JBwAAAACeoRQst+Ogm/+zMtutbhobBcup8Pguy4Nl/7hR3V+ot6/yucrJTAAAAACAqlKwnJyU7H/6rbJpZPYn4fOxUD55uVidmZtbi9Z5/t7Ljz9OrQEAAAAATFQ+CV8Zhcfb6dvAa1FvnIwv3TnbWx3PPFjcjayfR8le1oz6OFoux0brIvoPcxfR+q40AwAAAAAwZeoflmvxPrspouWdQf6JeL+IkQ9B8nCnFDInFn4fBc3S3GA0N4zuvtOVAAAAAMCXzbh05/405d9xdn4zCY6DYfTOO3HQKJ+6fGxpsxVZee5O//P/zwEAAAAA3JsRLAEAAAAAXodgCQAAAAAkQ7AEAAAAAJIhWAIAAAAAyRAsAQAAAIBkCJYAAAAAQDIESwAAAAAgGYIlAAAAAJAMwRIAAAAASIZgCQAAAAAkQ7AEAAAAAJIhWAIAAAAAyRAsAQAAAIBkCJYAAAAAQDIESwAAAAAgGeNgubn5MwAAAADAq3gULAEAAAAAXtd8/AdakoK2bXLvkAAAAABJRU5ErkJggg==" InformativeScreenshot="a7c9e5500cb89a99553bd7168c331441.png" IsResponsive="True" Reference="nT3iJ3vn_kqe3kLHdMpYpw/yLuR1jpfAkmYyJ4pMFysIw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DemoAppForRPATesting' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArgument="Hausnummer" CvType="Text" DesignTimeRectangle="1271, 632, 111, 18" ElementType="Text" FriendlyName="'Hausnummer'" FullSelectorArgument="&lt;webctrl aaname='Hausnummer' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Hausnummer' tag='LABEL' type='' class='mud-input-label mud-input-label-animated mud-input-label-text mud-input-label-inputcontrol' check:innerText='Hausnummer' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHMAAAAWCAYAAADzeqMPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAOjSURBVGhD7ZjfaxpBEMf7X/maV/HJvqWhYCUQCQkJtflBCU0aDG2ogoZwlAh3kAtR5CQeKsSjLor075rO3O6eu6fSszZtctzD98G92d2Z+eyv8VUqtQaJ4qEEZoyUwIyREpgxUgIzRtJgHlpDmEyGYB3oRoEqHfz+E5zKnG+J/rsSmDFSAjNG+gsws1C4MMF5HPvfSOyxA7X9rGJzApaH3zwbDoM20hU41Kd9pbStw/tqBzzGx5qMxuC1TSi9U/pJP6rHUGsNgY2EbXjeBYtvNk7pRx1KVg88OR4bQvNyD9KZ0DxeD6zzLWXMVfuTwnEPwbUuIafYBH5XTXB/kJ3OamWYOWxj2MbcBhhVA2rXDeiTQ6wD5bfSLjrM3e8Dfw6vZUKNxqtjgGTDHChlRD/hB2PjYF6Dkkh26hzLwvT7d+DGn9fhcUxwMaHvrO/o7SM1vlX7Z4VPY+jf87iN2wHPa/MS0prffB7W7YDTakB5W46xMswPYLiY0K6pQUp/cXw79zov2qLCPAbrcdYuZ3DAzjfRJmFiP3Xlnt7R6YD+F3W7yDBpXrlgUOlzx09ouH3juqf7s2r/A9tfiJ51EoAjwDyeAdwIYBKmbjfVHJg4+W8UTs6MFOd4W1SYeag94O9RD4ziumIX0gJI6SolSYG0LEztuEfNxKG3T8ddrT/3Zwot0AXfFLrd4s02B+YYnDoeB3QkhHUndoiWHDrr8ejwpnem1PIwEch+HVz/eELhnePe21A+yusrcQEk3v7yYJbbIt4FknZ/AHOx8Wxy8Ci45Qugf2vAaXEPCtuo80YoiGUeQKhMHnY/G2Dd4z0owDK3Pu0bS5gDsOdtINTpDrd7YpjTILSdMxNERJgIcRMXw+Yb9SW8Dh/9BYPzhu7MuMAM7kYBbZH+DcwHQ4OZ8+8uNYgsvwsn+IJTHgKpHRP61F8mYVv8blb0xfGp4T8kgnmjwjyal8wsfG2SL88HZko8lBjG/Vq1y5zgzjwL2p4YpniwkMNtG0sEE2yXxhBtShAbVxww68pSAksOWXcFSchDucXv3qA0wVKH36E9qMmnfFSYqTOwRT3G3wEmNPvybn9GMFNbeNSKuB8ojxS3DS6dZgzjLnC7J4aJEgUxTxDCosK9aIBLv7Udu+UX1EHhjI8bp1rhx6+WBLSj2lI+glBe14n0Z8AsTHpQGeBQuSPHcm0oGWG7/w2TFIpb/llSmMa9FMxEL1sJzBgpgRkjJTBjozX4BWljyKf5a7UUAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <uix:NGetText.TextString>
+                        <OutArgument x:TypeArguments="x:String">
+                          <VariableReference x:TypeArguments="x:String">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="x:String" x:Name="__ReferenceID3" Name="_autogenerated_TextString" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NGetText.TextString>
+                      <uix:NGetText.WordsInfo>
+                        <OutArgument x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                          <VariableReference x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" Name="_autogenerated_WordsInfo" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NGetText.WordsInfo>
+                    </uix:NGetText>
+                  </ActivityAction>
+                </uta:VerifyControlAttribute.ActivityToTest>
+                <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                  <ActivityFunc x:TypeArguments="x:Object">
+                    <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_4">
+                      <uta:ArgumentsBridge.Input>
+                        <InArgument x:TypeArguments="x:Object">
+                          <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID3}" />
+                        </InArgument>
+                      </uta:ArgumentsBridge.Input>
+                    </uta:ArgumentsBridge>
+                  </ActivityFunc>
+                </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <uta:VerifyControlAttribute.Expression>
+                  <InArgument x:TypeArguments="x:Object">[item.SpecificContent("newHouseNumber")]</InArgument>
+                </uta:VerifyControlAttribute.Expression>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uta:VerifyControlAttribute>
+              <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="534,269.3333333333333" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_5" Operator="Equality" OutputArgument="TextString" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                <uta:VerifyControlAttribute.ActivityToTest>
+                  <ActivityAction>
+                    <uix:NGetText DisplayName="Get Text 'Postleitzahl'" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="fea68d5f-d7ac-465f-a109-d323a6f879e9" Version="V3">
+                      <uix:NGetText.OutUiElement>
+                        <OutArgument x:TypeArguments="ui:UiElement">
+                          <VariableReference x:TypeArguments="ui:UiElement">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="ui:UiElement" Name="_autogenerated_OutUiElement" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NGetText.OutUiElement>
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="http://localhost:32768/Adress%C3%A4nderung" ContentHash="GVmEZv0U30ScX4stsU6tNA" CvElementArea="1267, 736, 1322, 45" CvTextArea="1270, 747, 69, 22" CvTextArgument="13403" CvType="InputBox" DesignTimeRectangle="1271, 735, 1320, 48" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'Postleitzahl'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' idx='3' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='text' class='mud-input-slot mud-input-root mud-input-root-text' tag='INPUT' aaname='' /&gt;" Guid="cc75ca37-57c9-496e-9529-717aeee5b35b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAABSwAAAA0CAYAAACAVna1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAU5SURBVHhe7d3PSxtpHMDh/a+8ehVPtie3LLS91EOhoP1hd6XdQwMVKrSySIlshbXUsCjdYAIaalDEv+u7JpNJxmSMtkzSOTyHB3Temcl7/vC+8/4yMzMbAAAAAABlIFgCAAAAAKUhWAIAAAAApSFYAgAAAAClIVgCAAAAAKUhWAIAAAAApSFYAgAAAAClIVgCAAAAAKUhWAIAAAAApSFYAgAAAAClIVgCAAAAAKUhWAIAAAAApSFYAgAAAAClIVgCAAAAAKUhWAIAAAAApSFYAgAAAAClIVgCAAAAAKUhWAIAAAAApTE2WN558Ge83d6L+tFFtHbWcu8ZWIilyqfYPzqL8/OLxOlZtA73Y+vVk5jLfSbPQrz+nL7jv3iXe89szC2tR/XgJNqnvd+61G4dR+39atzJuT9R1BwBAAAAgEkYCZadSPlu579otgYhsGN8sHwUb2sng/vbZ9H+dikTE5t/r90qCM692ot2+p5rguXci91oZkNl57famf//3Yz7I88VN0cAAAAAYDKGguVm7KdBr+OoEc1vyd/jguW9zUbvmZPYrWRXKi7G8lajFyCPo/r46nMj5iux2/u9RF6wfBrVZjLe/rody3fT653Vk3vR6j53FrXKQuaZAucIAAAAAEzMSLCsdbZVb2/E81+T4PfuIImD1wfLJ/2A2Nx+mjM+CIz1vx7mjKcGW8Hb9UYvPOYEy2e7vbFGfPhtaCy7nfxgMxMli5ojAAAAADBJNx66c3OwXIvqYbK9uraeN36bd2S2gn/bi9cv0ig5GiyXPh5333Ve3457Q2Ndlf1kvPOe/vVi5ggAAAAATFYBwfIG8+tR623zrlVyxrv3pFvBz2L31UJmFeVosOyvwvxcuXK9b+X6Z691mzkCAAAAABM3wWC5GPdfbsbuYS8wHuQdhNOR2Qr+uZJs4x4TLG+eT/odzpPYeZY3nnXbOQIAAAAA01B4sEzvHziL5s56LM3n339lK3h6z4SD5ffOEQAAAACYjsKD5dsvybciO/pBsN2I6h+Lo/cPbwVPr084WH7XHAEAAACAqZnsNyznn8SbneNkBeX5cVQfZ8dztoKnprYl/NLYOQIAAAAA0zT5Q3dmHsaHr8k7sgfl5G4FT00zWHblzxEAAAAAmK4pBMvZeL5z0n3HeX077nWvrcbOUfLe20p/P12VeV5bv/IbfT9ySvil0TkCAAAAANNWQLDciFr3e5CNqK7kjWdi4Net3tbv1ajWB9+RHNFOfrMjvVb/uNp919LH4/FhsbKfjHdWbvav/8gcAQAAAIBpKyBYpgfnXER982HO+A9stx6zJXww1oitB0NjMwvx5ku6AnMjEx4nMEcAAAAAoHCFbAnvr05sHw+dtL0Yy1uN3oE23/FNyXHBcuZpVJu9uHj4KX6/m15fiKXKXu+5oVPHLxU+RwAAAACgcMV8w3J+LaqHvZWN3SjY29p92vv//Cz2Nx7lP5tnbLC89Hgr6sPbxjP/t/4ZOnW8o+g5AgAAAACFK/DQncVYfr8X9aNMFDw9i1Z9Lz6sZFc03sJNwfLS3NJ6VA9OMsHxItqt46i9X407OfcnCpwjAAAAAFC4G4MlAAAAAMC0CJYAAAAAQGkIlgAAAABAaQiWAAAAAEBpCJYAAAAAQGkIlgAAAABAaQiWAAAAAEBpCJYAAAAAQGkIlgAAAABAaQiWAAAAAEBpCJYAAAAAQGkIlgAAAABAaQiWAAAAAEBpCJYAAAAAQGkIlgAAAABAafSD5crKSwAAAACAn2IkWAIAAAAA/Fyz8T/wDvFi71IpsgAAAABJRU5ErkJggg==" InformativeScreenshot="3353b4097e4764ec2d836dc4c9ba8298.png" IsResponsive="True" Reference="nT3iJ3vn_kqe3kLHdMpYpw/aDv13caNxU2pPer3zvlEBw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DemoAppForRPATesting' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArgument="Postleitzahl" CvType="Text" DesignTimeRectangle="1271, 713, 96, 18" ElementType="Text" FriendlyName="'Postleitzahl'" FullSelectorArgument="&lt;webctrl aaname='Postleitzahl' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Postleitzahl' tag='LABEL' type='' class='mud-input-label mud-input-label-animated mud-input-label-text mud-input-label-inputcontrol' check:innerText='Postleitzahl' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGQAAAAWCAYAAAA2CDmeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAARYSURBVGhD7VhRa9tIEL5/1de+Gj85hYOeKdjhICaXktJenbQXLm1xyJmLIQ5FHBa1IQqxMDK1iA2xSESM6e/6bka7K61s+ZCduqcHP3wP3h3tzM43+82uf3ry5Ck2yA42hGQMG0Iyhg0hGUP2CWkMMJ1+g9NImPsv7BlwvAlG5lHy/JpQ7dxTvPfovE2eD7FgXzFCxGLf5uHfY3Rt4HU+/vEPwcqEtDGi77zOh+T5NWENhEzgmAaa5womOn1J1K2F6tpIOULHIx8e+dDHVyUkCW8teAFJ6zs1ayAkabFCeHrci+2Zue+FDSGMlIQQXphwaYFp/0Ib30HNHMDzaZznHibweiRtz7TvGPl91DpDeA/KLi6BZ305riFM2oLAc5U6Oq4oEoZ/O0DzVSGyiSX/Ao60i6D2KQthbl5A98s+W6QWvtoHSblzfoic8kkIc/hpJj7XQq0c2T2eELWpkJBtnPUmwaJerx3Im8FJZ5uYtBVQs9mOGuylKewux/DZbtTGS7LZKu+jsluHFZyQLmq7+/j1F5ncpMDLFAsXgTdE5zPLapsaOP2ejtHakzYxQp6jRGtWPnXF2FWd/P2GYhDjNqp1XaIZFtygyLRcKJ/+EFbg04R1I/bl/B2phlISn2xVXlrXcr+Uu6K0ezwhf3SDRf2rk9hv3rBeISVyxOMj83c5Jon8amh2RNI1b4Z8vVFjaSWLCoFP1MMQTb3iyvIE23XxO0meUkpW9YtIqvclsntpDOHfEeF6bvIN2HxaXDNMtCIknpdtGC7ZTQc4U2OrE1JA8YCvkLxgNHd8xQmlAHd1W8YJrDuypeqvBL8/iN+eg1pFk5Q5pCQkLwlWiQ+xj9ZI+35FQnIHwoaTXEqYj2M+5kVFLcZXIoQcJIF03z7dCW2F7msONIgKJgLk7xJJxUjprjeGQ9J1vPd85ruUhMikxmLT8RhC8jKG2dMnsfXGgH2j9ZBZn4Q1EDJ77TXw1zultxEWE1JA8yvNaYQEeLaD96dtWP1x2NxZy0NNXZIQvy/0eQ71I7Hm0oQU5Kmn/TeiwlPI/Sn6j3/TRfPjIfUgve+tlZD5xZKQWrKICA6+pN+86NYVkMa+lu0h6rZnN2K9aw5LEpI7cUSP7GmNV8NZj+OlhMYK84dIVjpCUjd12ig7jpq8QPHzcMZXSkKoVxg3nBwqBv2aSyid0mlWfWoZQsIbFJ3qGSVQEIpAUqbPlw24fNozQUjqay8l+pY3M4Err71NfrvwRu66eK+tp06NzdfKj5LAhMDDxuuPYUt5VVdL/qvkZ7ZLSv4LSmAQnwODvjkOrsjRPkaXUvZ0yDiKF1xA9K03CK7arUvtXZUNQhhpH4aHaFLCooch2VEPiD2UCLmDNlyWO7bpNcT4gsBzr0SDDWwZdFmw6ZG2pWwST0MB1X/o+irjcOo8Jk+mWmcW4burgNfnspB4XD4KRRFFJ+e7ErLB/48NIRnDhpCMYUNIpvAU/wJmdHrrRh2oFQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <uix:NGetText.TextString>
+                        <OutArgument x:TypeArguments="x:String">
+                          <VariableReference x:TypeArguments="x:String">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="x:String" x:Name="__ReferenceID4" Name="_autogenerated_TextString" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NGetText.TextString>
+                      <uix:NGetText.WordsInfo>
+                        <OutArgument x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                          <VariableReference x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" Name="_autogenerated_WordsInfo" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NGetText.WordsInfo>
+                    </uix:NGetText>
+                  </ActivityAction>
+                </uta:VerifyControlAttribute.ActivityToTest>
+                <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                  <ActivityFunc x:TypeArguments="x:Object">
+                    <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_5">
+                      <uta:ArgumentsBridge.Input>
+                        <InArgument x:TypeArguments="x:Object">
+                          <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID4}" />
+                        </InArgument>
+                      </uta:ArgumentsBridge.Input>
+                    </uta:ArgumentsBridge>
+                  </ActivityFunc>
+                </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <uta:VerifyControlAttribute.Expression>
+                  <InArgument x:TypeArguments="x:Object">[item.SpecificContent("newZipCode")]</InArgument>
+                </uta:VerifyControlAttribute.Expression>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uta:VerifyControlAttribute>
+              <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="534,269.3333333333333" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_6" Operator="Equality" OutputArgument="TextString" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                <uta:VerifyControlAttribute.ActivityToTest>
+                  <ActivityAction>
+                    <uix:NGetText DisplayName="Get Text 'Stadt'" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="fea68d5f-d7ac-465f-a109-d323a6f879e9" Version="V3">
+                      <uix:NGetText.OutUiElement>
+                        <OutArgument x:TypeArguments="ui:UiElement">
+                          <VariableReference x:TypeArguments="ui:UiElement">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="ui:UiElement" Name="_autogenerated_OutUiElement" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NGetText.OutUiElement>
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="http://localhost:32768/Adress%C3%A4nderung" ContentHash="l2vBaScE7UOtyR0aDSHAGQ" CvTextArgument="Berlin" CvType="Text" DesignTimeRectangle="1271, 816, 1320, 48" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'Stadt'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' idx='4' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='text' class='mud-input-slot mud-input-root mud-input-root-text' tag='INPUT' aaname='' /&gt;" Guid="8d49f73c-eb9e-41b9-9e25-48119739c614" ImageBase64="iVBORw0KGgoAAAANSUhEUgAABSwAAAA0CAYAAACAVna1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAS4SURBVHhe7d3fS1tnGMDx/Vfe9jZ45XrVFaEtG4bS0tIftpWyMlA6qYJKkaHMwDJWKZEqM6Chhoj073pmknPiSUzsIut8u30uPjfPed+Tc/3lPTnfTExcCwAAAACAFAiWAAAAAEAyBEsAAAAAIBmCJQAAAACQDMESAAAAAEiGYAkAAAAAJEOwBAAAAACSIVgCAAAAAMkQLAEAAACAZAiWAAAAAEAyBEsAAAAAIBmCJQAAAACQDMESAAAAAEiGYAkAAAAAJEOwBAAAAACSIVgCAAAAAMkQLAEAAACAZCQfLJd2PsXJyadoVF72zUsPF2N1ZS3mbvevBwAAAAC+XgPBci1qJ91AOFTzKPZ+24xX5anCni9reLB8HpWD7JnerxXmAAAAAMDXbHSwbB5H82NBK5u3tQ6j8uzfiZbDg+VUzP9x3JnXN/tPXgIAAAAAX68RwfIoKk+L865v7y1HNT/ZWN+K+wPXv4RRr4QDAAAAAP89YwXLjh/fRbOzZj/Wp4dc/4cJlgAAAADw/zF+sHxajcaFa27EozfvYq/RfWW7o3kUtc3FKE8OrF3e7V5vVGP24XrUDrI9B9V4lK0ZFSyHz19GpdGet59tKsoLW2f37PzOYWyvPI9S4T4AAAAAQDrGDpa33u5341+rFvPnrs/E0vuzQJj//2UvGNarMVuMlnmwbK/L17S1A2a25nLB8lPUPxz27tn3DCfHUVueKewBAAAAAFLx94Pl9ZmYW9nNTlcOj36zvx51o2CjFj8XviReKi/H9sduMKz/8uRsTx4sO3t2Y/2n5/H9d3fi1g93eqcgLxss289Y31yIm3kgnXwQqztZuCwEUQAAAAAgHSOC5QXaXwhfeHD+terp9djrrDmMjXsD106VXte6+z++i7l8ngfL1n6s3u5fn7tssGzPzz3js/x19tPfG3w9HQAAAAC4cqODZbP7OndRZ942cIKyrZTHx/pWlAvzM/m9D2PjbjYr/oflufVdlw2WteWztWc+/8o7AAAAAHB1xvsPy+tPYmk7e+27WYv5winF2Uo2/6zCvQVLAAAAAKBg7I/uTEwu9v6Pcm/tTm/eC5at8ycz++3HxuPsXoIlAAAAAFAwfrA8lcfC5u8LvVkvWO6s9a29kGAJAAAAABRcIlhOxeqHbhQsBsubb/c7s/ZHdV71rb+AYAkAAAAAFIwfLKdP17S6UXDv7dkr4RN3t6Le2Xs6X5np35MplZ9Eufh1bsESAAAAACgYK1iWyotR+TP7WnhrN5ami9enYn47/5L4UVQXHkSpd+1G3H9Ti0b72kE15vK5YAkAAAAAFIwIlqeaAx/LaWbzLPhtvx5yinLyZWzkQbN4j+xE5rl9giUAAAAAUDA6WA7TPIr6+62YL08V9gy6EY9WalFvFMJl6zgaO0P2CZYAAAAAQMFAsAQAAAAAuDqCJQAAAACQDMESAAAAAEiGYAkAAAAAJEOwBAAAAACSIVgCAAAAAMkQLAEAAACAZAiWAAAAAEAyBEsAAAAAIBmCJQAAAACQDMESAAAAAEiGYAkAAAAAJEOwBAAAAACSIVgCAAAAAMkQLAEAAACAZPSC5ePHLwAAAAAArsS5YAkAAAAAcLWuxV85SOFaSes86AAAAABJRU5ErkJggg==" InformativeScreenshot="89926ef15bba095b79f4686d7d26ab7f.png" IsResponsive="True" Reference="nT3iJ3vn_kqe3kLHdMpYpw/CgM-gPwDdkeYp2VSRflbGQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DemoAppForRPATesting' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArgument="Stadt" CvType="Text" DesignTimeRectangle="1271, 794, 43, 18" ElementType="Text" FriendlyName="'Stadt'" FullSelectorArgument="&lt;webctrl aaname='Stadt' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Stadt' tag='LABEL' type='' class='mud-input-label mud-input-label-animated mud-input-label-text mud-input-label-inputcontrol' check:innerText='Stadt' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAC8AAAAWCAYAAABQUsXJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAK1SURBVFhH7VZRa+JAEL5/5WtfxSftU+8oaCko5aDlbHs9rmB7VGyhASMSDuUiNNCIRDRYoQYNBrnf9d1sskk2Gg/PerQFHz7Q2dnZb2e+mc2HRGIH7xVb8q+FLfnNoQZj9huzbi1mbREL5JMnCtqDCewpBWGBpg6sroqbQjri93/wAvLJrxosttkewWg1IVcVKK0+LHaR6QiNM2Gz1HcvZ0iC7cWII3+JlkU2S8N5xDdC/gByj5xmT1ByUadErgmTBe0p+OTb3hb55U7uxToO7LGO2zNenQj6uA980yiUVRjPTrBuP/chn8zLLo0vVV5V5mdPYFRVL0mc/H2XrwmwWpdBjJjMO2hX8oHDAlIHODw6RqH+5AYz6/T7KI8MX89SRWyy26YOhWQn13UMbYpr0wX3wzi+38zqo8H8mobnx2ycfCbHYt9Bc5Oq44bOPfwYJiHasDkqGw9gDww0KlfI7grrImJlcwrFpAoN1Ej1khWDX/SA2+7QZudQJUup0I/JcyiQ97CSbDh2LyA/jsJpwy+yUPZ/0TyXWlByPhhECXhYW/Pz2EP2Ww2tDl2EBZxN0C77mSMsJb9HWiYJWKHmfQRkl+7dGPkQyYICk1VCDBBLII3Sw4TsDoYPCkpFplnCDz2a6Y2Tv6YDxg7MnxcRBx9e5wtTJZZAeHgysBGWyebX/Fnrkt+njX52xSZiSJWhjWmNNZhv+xt5eg9E8tmqN5lCjV958ebP+qyu37DB+BJeWLmpw2SbSQqGJIzQ77o3Ensa+Uk4d8egP26JaFejUalCM5mMuE1o0FVGpQc/JvVcnfyuT4O1Bc1nitSkXeHbhsAemUb5OCqFRB63jz4x+nQocnuKplUnJOw+UEXqGfY/UpG4R0ryshwhzz5b6PFilWJ+HSmwr9SwbxVb8q+Fd0x+B38ALYQ5reu23iwAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <uix:NGetText.TextString>
+                        <OutArgument x:TypeArguments="x:String">
+                          <VariableReference x:TypeArguments="x:String">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="x:String" x:Name="__ReferenceID5" Name="_autogenerated_TextString" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NGetText.TextString>
+                      <uix:NGetText.WordsInfo>
+                        <OutArgument x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                          <VariableReference x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" Name="_autogenerated_WordsInfo" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NGetText.WordsInfo>
+                    </uix:NGetText>
+                  </ActivityAction>
+                </uta:VerifyControlAttribute.ActivityToTest>
+                <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                  <ActivityFunc x:TypeArguments="x:Object">
+                    <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_6">
+                      <uta:ArgumentsBridge.Input>
+                        <InArgument x:TypeArguments="x:Object">
+                          <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID5}" />
+                        </InArgument>
+                      </uta:ArgumentsBridge.Input>
+                    </uta:ArgumentsBridge>
+                  </ActivityFunc>
+                </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <uta:VerifyControlAttribute.Expression>
+                  <InArgument x:TypeArguments="x:Object">[item.SpecificContent("newCity")]</InArgument>
+                </uta:VerifyControlAttribute.Expression>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uta:VerifyControlAttribute>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMSSURBVFhHxZcxa1RREIXzE/YnpLdJZ5vCH7DWImxjY2M6wSqgtWxrIQh2FpIqWAathS1ERRQ3iEhQYRHZ9jnf8M5j3rxJ3kaNFifkzp07Z+bM3JuXraZp/itK40VgvV5vG44MB4Zd2QeOfwNGMDXsG/aCDeImwPcGh/8UFniWiFjvaX3/9rHsK8OkDPI7sGBI3FX5/PCriJAdsubx/HNz9dKr5uWL79qblcEyzJHguwZkrdARfzv56VXeuf5eJI43i5WTg6DCQUkIbHNiIPiydR7FsycnzY0rb52EamWH/Nrl110C+LR7y9PI6ZnLBqgK2Z4+/OKBM+7d/NgjAMcffvhZzuQ9oNiZmKofaRNSgufDY0D+qEYFiqoSYGB8MxNTBYGFqqrzgLb0ErDFXOS3pu86RxIJU9sDdpKJgTeFYoicCe+RU6GuEv18cPdTTwHWSgy/8yrCOaAEfNIZKDlIIojiwQwUIvF4zcZAAW0CR131VCkHJhfbpvKiGklwrtrPoNA2gTkJ+NSret3RqAa28LI58qygFPazJl+QuoZpJ7+CUQXB1VMCskYhkhK4ZtgjIT5jKgT5V7SfBNwgB7KjWq0hInAeMgWKbYKcwYx+GUHJeZcAlciBdZQ/r4UqAfywRb+IWL1hu0sgTjDri0gABVGSfcM+5GULcEJ2rZGsaoHI+Msmm+Yi+glB+oXIewmIQD3XQV0xVOLOUzE+nMHGHr0H2Cq15G9A+p2cgL//evslbayMJIJ8Tso+SSs4tkwe9w0DciXgn0s46iCTTMB8p1nHu38W8Av3vSRXAnztuKMIdfcJsCmhwNmoSht7WZED/2EO/hrGO6zeS9qsRgR7tESDxhlexiT/JJMDJcCHCE69VqQe+hyQZIT2AIrl2WgxzcRC94s57RgGSahCKqLCnADqQCqFit7PImFGb2HO/EPhSVBtfGTGAHGqmr8x5eBFDAwcMizaIJ4Id1xvQASVsxevaAu+psueZ5RGYAG4nht/khvwhdjf+E1RGiMsoP4h4cHK4PaQ6KjUp6E0/js0W78AQWMC43VltAEAAAAASUVORK5CYII=" InformativeScreenshot="bb3743500c35ea1e4323f404b67bcfbb.jpg" Selector="&lt;html app='chrome.exe' title='DemoAppForRPATesting' /&gt;" Title="DemoAppForRPATesting" Url="http://localhost:32768/" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Framework\KillAllProcesses.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="630,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Framework\KillAllProcesses.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <scg:Dictionary x:TypeArguments="x:String, Argument" />
         </ui:InvokeWorkflowFile.Arguments>
