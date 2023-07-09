@@ -1,5 +1,6 @@
 {
   "name": "RPATestingMainBot",
+  "projectId": "2d5722eb-fad6-4691-873e-818abf5caff9",
   "description": "RPA Testing Main Bot",
   "main": "Main.xaml",
   "dependencies": {

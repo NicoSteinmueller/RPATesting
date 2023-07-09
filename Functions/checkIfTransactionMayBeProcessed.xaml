@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1679.3333333333333,1253.3333333333333</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1122.6666666666667,1253.3333333333333</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>checkIfTransactionMayBeProcessed_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -82,14 +82,14 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart DisplayName="checkIfTransactionMayBeProcessed" sap:VirtualizedContainerService.HintSize="1075.3333333333333,1188.6666666666667" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="checkIfTransactionMayBeProcessed" sap:VirtualizedContainerService.HintSize="668,1154.6666666666667" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <av:Point x:Key="ShapeLocation">430,2.6666666666666643</av:Point>
         <av:Size x:Key="ShapeSize">60,74.66666666666667</av:Size>
-        <x:Double x:Key="Width">1041.333333333333</x:Double>
-        <x:Double x:Key="Height">1151.3333333333333</x:Double>
+        <x:Double x:Key="Width">634.3333333333333</x:Double>
+        <x:Double x:Key="Height">1117.52</x:Double>
         <av:PointCollection x:Key="ConnectorLocation">430,40 400.00000000000006,40 400.00000000000006,40.519999999999996 380,40.519999999999996</av:PointCollection>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
@@ -235,7 +235,7 @@
                                                           <av:Size x:Key="ShapeSize">200,54</av:Size>
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
-                                                      <ui:LogMessage DisplayName="Log ended check for Transaction" sap:VirtualizedContainerService.HintSize="334,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Ended check if Transaction may be processed...&quot;]">
+                                                      <ui:LogMessage DisplayName="Log ended check for Transaction" sap:VirtualizedContainerService.HintSize="200,54" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Ended check if Transaction may be processed...&quot;]">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
